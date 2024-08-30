@@ -122,15 +122,8 @@ public class VariableExample2 {
 		final int LEFT_MOVE = -1;
 		final int RIGHT_MOVE = -1;
 		
-		
-		
-		
- 		
-		
-		
-		
-		
-		
+		System.out.println(1 + 1.13);
+			
 		
 	}
 

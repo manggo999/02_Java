@@ -16,8 +16,13 @@ public class OperatorPractice { // 기능 제공용 클래스
 		System.out.print("사탕 개수 : ");
 		int i2 = sc.nextInt();
 		
-		int candy = i2 / i1; 
+		int candy = i2 / i1;
 		System.out.println("1인당 사탕 개수 : " + candy);
+		
+		int mnm = i2 % 
+		System.out.println("남은 사탕 개수 : " + );
+		
+		
 		
 	
 	
@@ -32,32 +37,25 @@ public class OperatorPractice { // 기능 제공용 클래스
 		
 		
 		System.out.println("이름 : ");
-		
 		String name = sc.nextLine();
 		
 		
 		System.out.println("학년 : ");
-		
 		int grade = sc.nextInt();
 		
 		
         System.out.println("반 : ");
-		
 		int cl = sc.nextInt();
 		
 		
         System.out.println("번호 : ");
-		
 		int number = sc.nextInt();
 		
 		
-		System.out.println("성별 : ");
-		
-       
-        
+		System.out.println("성별(남학생/여학생) : ");
+		String gender = sc.next();
 		
 		System.out.println("성적 : " );
-		
 		double gr = sc.nextDouble();
 		
 		
