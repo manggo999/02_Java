@@ -189,33 +189,27 @@ public class ConditionExample { // 기능 제공용 클래스
 		
 		String result;
 		
-		System.out.println("키 : ");
-		double height = sc.nextDouble();
-		
-		if (age < 0 || age > 100) {
-			System.out.println("잘못 입력하셨습니다");
-			
-		} else if (age >= 12 && height >= 140.0) {
-			System.out.println("탑승가능");
-			
-		} else if (age < 12 ) {
-			System.out.println("적정 연령이 아닙니다");
-			
-		} else if ( height < 140.0) {
-			System.out.println("적정 키가 아닙니다");
-		}
-		
-		System.out.println("나이 : " );
-		int age = sc.nextInt();
-		
-		String result;
-		
-		if (age < 0 || age > 100) {
+		if(age < 0 || age > 100) {
 			result = "잘못 입력하셨습니다";
 			
-		} else // 나이를 잘 입력한 겨우 0~100 사이
+		} else { // 나이를 잘 입력한경우 0~100 사이
 			
+			System.out.print("키 입력 : ");
+			double height = sc.nextDouble();
+			
+			if( age < 12 ) {
+				result = "적정 연령이 아닙니다";
+				
+			} else if( height < 140.0 ) {
+				result = "적정 키가 아닙니다";
+				
+			} else {
+				result = "탑승 가능";
+			}
+			
+		}
 		
+		System.out.println(result);
 		
 	}
 	
@@ -230,29 +224,35 @@ public class ConditionExample { // 기능 제공용 클래스
 		if (age < 0 || age > 100) {
 			result = "나이를 잘못 입력하셨습니다";
 			
-		} else { // 0~250 잘 입력한 경우
+		} else { // 0~100 잘 입력한 경우
+			
+			System.out.print("키 입력 : ");
+			double height = sc.nextDouble();
+			
+			if( height < 0 || height > 250 ) {
+				result = "키를 잘못 입력했어요!";
 				
-				System.out.println("키 입력 : " );
-		        double height = sc.nextDouble();
+			} else { // 0 ~ 250 잘 입력한 경우
 				
-		        }if(height < 0 || height > 250.0) {
-			    result = "키를 잘못 입력하셨습니다";
-			    
-		      } else if (age >= 12 && height < 140.0) {
-		    	   result = "나이는 적절하나, 키가 적절치 않음";
-		    			   
-		      } else if(age < 12 && height < 140.0) {
-		    	   result = "나이와 키 모두 적절치 않음";
-		    			   
-		      } else {
-		    	   result = "탑승가능!!";
-		      }
+				if( age < 12 && height >= 140.0 ) { // 나이 X, 키 O
+					result = "키는 적절하나, 나이가 적절치 않음";
+					
+				} else if( age >= 12 && height < 140.0 ) { // 나이 O, 키 X
+					result = "나이는 적절하나, 키가 적절치 않음";
+					
+				} else if( age < 12 && height < 140.0) { // 나이 X, 키 X
+					result = "나이와 키 모두 적절치 않음";
+					
+				} else { // 나이 O, 키 O
+					result = "탑승 가능!!!";
+				}
 				
+			}
+			
+			
+		}
 		
-		
-		
-		
-		
+		System.out.println(result);
 		
 		
 		

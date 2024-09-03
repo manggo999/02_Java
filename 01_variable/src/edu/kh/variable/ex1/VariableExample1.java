@@ -3,8 +3,6 @@ package edu.kh.variable.ex1;
 public class VariableExample1 {
 	
 	
-	
-	
 	public static void main(String[] args) {
 		
 		System.out.println(2 * 3.141592653589793 * 5);
