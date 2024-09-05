@@ -48,7 +48,7 @@ public class People { // 국민(사람) 클래스
 	
 	// name 변수의 값을 호출한 쪽으로 돌려 보내주는 간법 접근 기능 중 getter
 	
-	// void : 반환할 값이 없다.(반환형(자료형)이 없다)
+	// void : 반환할 값이 없다.(반환형(자료형)이 없다)(setter)
 	
 	public String getName() {
 		return name;
