@@ -11,7 +11,7 @@ public interface Calculator {
 	// - 인터페이스 : 모두 추상메서드
 	
 	// 속성(필드)
-	// 필드는 묵시적으로 public static final => 상수
+	// 필드는 묵시적으로 public static final => 상수(어디서든 공유 가능)
 	public static final double PI = 3.14;
 	static final int MAX_NUM = 100000;
 	public int MIN_NUM = -100000;
