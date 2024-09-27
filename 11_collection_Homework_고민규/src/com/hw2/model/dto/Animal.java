@@ -22,6 +22,7 @@ public abstract class Animal {
 		this.name = name;
 	}
 	
+	
 	// 추상 메서드 형태
 	public abstract void sound();
 	

@@ -9,7 +9,7 @@ import edu.kh.poly.ex2.model.service.HGDCalculator;
 public class AbstractRun {
 
 	public static void main(String[] args) {
-		new AbstractService().ex2();
+		new AbstractService().ex1();
 		
 
 		// ==============================================

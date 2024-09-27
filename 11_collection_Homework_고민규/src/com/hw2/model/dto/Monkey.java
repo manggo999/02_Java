@@ -1,6 +1,6 @@
 package com.hw2.model.dto;
 
-public abstract class Monkey extends Animal {
+public class Monkey extends Animal {
 	
 	public Monkey() {}
 	
@@ -8,6 +8,12 @@ public abstract class Monkey extends Animal {
 		super(name);
 	}
 
-	public abstract void sound();
+	@Override
+	public void sound() {
+		System.out.println(name + "가 우끼끼 소리를 냅니다! ");
+		
+	}
+
+	
 
 }

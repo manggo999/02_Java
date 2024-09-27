@@ -65,6 +65,8 @@ public class Person {
 	//     asfagsgwegsdgQWEGgsdg -> asdfgh
 	// 암호화에 많이 사용
 	
+	
+	
 	// alt + shift + s -> Generate hashCode() and equals() ... 
 	
 	@Override
